@@ -41,8 +41,8 @@ class ClienteController extends Controller
     }
 
     public function selectCliente(Request $request){
-        $categoria= Categoria::select('id','nombre')->get();
-        return $categoria;
+        $cliente= Cliente::select('id','nombre','apellido')->get();
+        return $cliente;
     }
 
 }
